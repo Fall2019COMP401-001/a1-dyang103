@@ -90,6 +90,6 @@ public class A1Adept {
 		//Print the output
 		System.out.printf("Biggest: %s (%.2f)\n", customerInfo[max_index][0], Double.parseDouble(customerInfo[max_index][1]));
 		System.out.printf("Smallest: %s (%.2f)\n", customerInfo[min_index][0], Double.parseDouble(customerInfo[min_index][1]));
-		System.out.printf("Average: " + String.format("%.2f", average));
+		System.out.printf("Average: %.2f\n", average);
 	}
 }
