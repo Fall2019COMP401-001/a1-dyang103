@@ -53,7 +53,7 @@ public class A1Adept {
 			
 			//Add each customers information to the Array
 			customerInfo[i][0] = firstName + " " + lastName;
-			customerInfo[i][1] = "" + String.format("%.2f", itemPrice);
+			customerInfo[i][1] = "" + itemPrice;
 		}
 		
 		//Determine the maximum amount spent between all of the customers
@@ -86,9 +86,10 @@ public class A1Adept {
 		}
 		average = average/customerInfo.length;
 		
+		
 		//Print the output
-		System.out.println("Biggest: " + customerInfo[max_index][0] + " (" + customerInfo[max_index][1] + ")");
-		System.out.println("Smallest: " + customerInfo[min_index][0] + " (" + customerInfo[min_index][1] + ")");
-		System.out.println("Average: " + String.format("%.2f", average));
+		System.out.printf("Biggest: %s (%.2f)\n", customerInfo[max_index][0], Double.parseDouble(customerInfo[max_index][1]));
+		System.out.printf("Smallest: %s (%.2f)\n", customerInfo[min_index][0], Double.parseDouble(customerInfo[min_index][1]));
+		System.out.printf("Average: " + String.format("%.2f", average));
 	}
 }
