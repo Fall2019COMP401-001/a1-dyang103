@@ -87,8 +87,8 @@ public class A1Adept {
 		average = average/customerInfo.length;
 		
 		//Print the output
-		System.out.println("Biggest: " + customerInfo[max_index][0] + "(" + customerInfo[max_index][1] + ")");
-		System.out.println("Smallest: " + customerInfo[min_index][0] + "(" + customerInfo[min_index][1] + ")");
+		System.out.println("Biggest: " + customerInfo[max_index][0] + " (" + customerInfo[max_index][1] + ")");
+		System.out.println("Smallest: " + customerInfo[min_index][0] + " (" + customerInfo[min_index][1] + ")");
 		System.out.println("Average: " + String.format("%.2f", average));
 	}
 }
